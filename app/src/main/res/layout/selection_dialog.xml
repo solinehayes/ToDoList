@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/display_checkboxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/dialog_title"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:id="@+id/task_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tasks"
+            android:onClick="onSelectionCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/event_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/events"
+            android:onClick="onSelectionCheckboxClicked" />
+
+        <CheckBox
+            android:id="@+id/memo_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/memos"
+            android:onClick="onSelectionCheckboxClicked" />
+
+        <CheckBox
+            android:id="@+id/checked_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checked_items"
+            android:layout_marginTop="10dp"
+            android:onClick="onSelectionCheckboxClicked"/>
+    </LinearLayout>
+
+</RelativeLayout>

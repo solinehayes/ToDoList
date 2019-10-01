@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tpt.igr203.alita.todolist.viewMemo"
+    >
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:onClick="back"
+            android:layout_margin="15dp"
+            android:fontFamily="Montserrat"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:background="@drawable/button"
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="save"
+            android:text="@string/save"
+            android:layout_margin="15dp"
+            android:fontFamily="Montserrat"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:background="@drawable/button"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Name"
+            android:id="@+id/memoName"
+            android:fontFamily="Montserrat"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="15"
+            android:hint="Type your memo here"
+            android:id="@+id/memo"
+            android:fontFamily="Montserrat"
+            android:gravity="top|left"/>
+
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:onClick="deleteMemo"
+            android:src="@drawable/delete_img"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:background="@drawable/delete_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

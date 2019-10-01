@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="save">Save</string>
+    <string name="back">Cancel</string>
+    <string name="plus">+</string>
+    <string name="yourLists">Your Lists</string>
+    <string name="listA">List A</string>
+    <string name="listB">List B</string>
+    <string name="task1">Task 1</string>
+    <string name="event1">Event 1</string>
+    <string name="memo1">Memo 1</string>
+    <string name="deadline1">Deadline 1</string>
+    <string name="newTask">+ New Task</string>
+    <string name="newEvent">+ New Event</string>
+    <string name="newMemo">+ New Memo</string>
+    <string name="add">Add</string>
+    <string name="task2">TASK 2</string>
+    <string name="action_settings">SETTINGS</string>
+    <string name="action_search">SEARCH</string>
+    <string name="action_calendar">CALENDAR</string>
+    <string name="action_selection">SELECTION</string>
+    <string name="action_sort">SORT</string>
+    <string name="action_todolist">TO-DO LISTS</string>
+    <string name="display">Display:</string>
+    <string name="tasks">Tasks</string>
+    <string name="events">Events</string>
+    <string name="memos">Memos</string>
+    <string name="checked_items">Checked items</string>
+    <string name="lists">Lists:</string>
+    <string name="listC">List C</string>
+    <string name="listD">List D</string>
+    <string name="listE">List E</string>
+    <string name="listF">List F</string>
+    <string name="sort_by">Sort by:</string>
+    <string name="color">Color</string>
+    <string name="importance">Importance</string>
+    <string name="deadline">Deadline</string>
+    <string name="last_modified">Last modified</string>
+    <string name="remove">Remove</string>
+    <item type="id" name="importance" />
+    <item type="id" name="deadline" />
+    <item type="id" name="layoutColor" />
+    <item type="id" name="parentId" />
+    <string-array name="array_reminder">
+
+        <item>5 minutes before</item>
+
+        <item>10 minutes before</item>
+
+        <item>1 day before</item>
+
+        <item>2 days before</item>
+
+        <item>1 week before</item>
+
+    </string-array>
+</resources>

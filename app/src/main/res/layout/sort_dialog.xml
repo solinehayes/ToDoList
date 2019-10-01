@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/sort_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_by"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <GridLayout
+        android:id="@+id/sort_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sort_title"
+        android:layout_marginTop="10dp"
+        android:columnCount="1"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/color_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/color"
+            android:background="@drawable/gradient" />
+
+        <Button
+            android:id="@+id/importance_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/importance"
+            android:background="@drawable/gradient_red"/>
+
+        <Button
+            android:id="@+id/deadline_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deadline"
+            android:background="@android:color/holo_blue_dark"/>
+
+        <Button
+            android:id="@+id/last_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/last_modified"
+            android:background="#FF4CA66B"/>
+    </GridLayout>
+
+</RelativeLayout>

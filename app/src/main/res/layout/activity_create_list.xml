@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tpt.igr203.alita.todolist.createList">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:onClick="back"
+                android:background="@drawable/button"
+                android:layout_marginRight="30dp"
+                />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="save"
+                android:text="@string/save"
+                android:background="@drawable/button"
+                android:layout_toRightOf="@id/back"
+                android:layout_marginLeft="30dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/buttons" >
+            <EditText
+                android:id="@+id/nameList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Name"
+                android:textColorHint="@color/green"
+                android:textColor="@color/green"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/choseColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Couleur:"
+            android:layout_below="@+id/name"/>
+        <GridLayout
+            android:id="@+id/colors"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:columnCount="4"
+            android:layout_below="@id/choseColor">
+            <Button
+                android:id="@+id/green"
+                android:onClick="changeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:foreground="@color/green"/>
+            <Button
+                android:id="@+id/pink"
+                android:onClick="changeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:foreground="@color/pink"/>
+            <Button
+                android:id="@+id/blue"
+                android:onClick="changeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:foreground="@color/blue"/>
+            <Button
+                android:id="@+id/orange"
+                android:onClick="changeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:foreground="@color/orange"/>
+            <Button
+                android:id="@+id/dark_blue"
+                android:onClick="changeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:foreground="@color/dark_blue"/>
+            <Button
+                android:id="@+id/yellow"
+                android:onClick="changeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:foreground="@color/yellow"/>
+            <Button
+                android:id="@+id/purple"
+                android:onClick="changeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:foreground="@color/purple"/>
+            <Button
+                android:id="@+id/red"
+                android:onClick="changeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:foreground="@color/red"/>
+        </GridLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/colors">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="deleteList"
+                android:src="@drawable/delete_img"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:background="@drawable/delete_img"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
