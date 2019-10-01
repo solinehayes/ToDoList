@@ -1,2 +1,13 @@
 # ToDoList
-To do list Android application
+
+## Presentation
+
+This code was written for a school project for the class IGR203: User Centered Design.
+This project was not only a programing project but contained an experience of the whole conception cycle including the user centered conception (Analyse, Mockups, evaluation...).
+
+The mobile app was created using Android studio. 
+
+This project was made with:
+- Berenger Zoé
+- Paliard Chloé
+- Riquier Melvin
