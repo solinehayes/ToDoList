@@ -11,3 +11,10 @@ This project was made with:
 - Berenger Zoé
 - Paliard Chloé
 - Riquier Melvin
+
+
+To access the code files:
+
+<code> app/src/main/java/tpt/igr203/alita/todolist/ </code>
+
+or open the whole project with Android Studio
